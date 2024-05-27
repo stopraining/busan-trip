@@ -1,0 +1,507 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Serif TC", serif;
+  font-weight: 600;
+  font-style: normal;
+  color: #58595b;
+  scroll-behavior: smooth;
+}
+
+h1 {
+  color: #51889f;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 900;
+  color: #58595b;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+body {
+  position: relative;
+}
+body img.fixed-image {
+  min-height: 100vh;
+  position: fixed;
+  width: 100%;
+  z-index: -5;
+  bottom: 0;
+  left: 0;
+}
+body header {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0px 10px 20px -8px #777;
+}
+body header section.logo {
+  flex: 1 1 300px;
+  display: flex;
+  align-items: center;
+}
+body header section.logo img {
+  width: 15vw;
+}
+body header section.switch-menu-div {
+  flex: 1 1 50px;
+  text-align: right;
+}
+body header section.switch-menu-div label.switch-menu {
+  font-size: 2rem;
+  margin: 0 1rem 0 0;
+  cursor: pointer;
+  display: none;
+}
+body header nav {
+  flex: 5 1 500px;
+  padding-top: 3rem;
+  margin-top: -3rem;
+}
+body header nav input#switch-menu {
+  display: none;
+}
+body header nav input#switch-menu:checked ~ .menu {
+  max-height: 200px;
+}
+body header nav ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+  transition: all 0.2s ease-in;
+}
+body header nav ul li {
+  padding: 10px;
+}
+body header nav ul li a {
+  color: black;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+body header nav ul li a:hover {
+  color: #51889f;
+  border-bottom: 3px solid #dae7f2;
+}
+body main {
+  /*attractions*/
+  /*food*/
+  /*about*/
+  /*contact*/
+}
+body main section.background-img {
+  min-height: 70vh;
+  background-size: cover;
+  background-position: center;
+  transform: all 0.75s ease;
+  position: relative;
+  z-index: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body main section.background-img div.filter {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  min-height: 70vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+body main section.background-img h1 {
+  color: white;
+  font-weight: normal;
+  font-size: 2.5rem;
+  text-align: center;
+}
+body main section.info-circles {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 3rem 5.5rem;
+}
+body main section.info-circles h1 {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+body main section.info-circles div.circles {
+  white-space: nowrap;
+  position: relative;
+  padding: 0px 25px;
+}
+body main section.info-circles div.circles div.circles-inner {
+  overflow-x: scroll;
+  overflow-x: hidden;
+}
+body main section.info-circles div.circles div.circles-inner div.circle {
+  width: 12rem;
+  display: inline-block;
+  overflow: hidden;
+  padding: 5px;
+  text-align: center;
+}
+body main section.info-circles div.circles div.circles-inner div.circle img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  transition: all 0.1s ease-in;
+  cursor: pointer;
+}
+body main section.info-circles div.circles div.circles-inner div.circle img:hover {
+  border: 3px solid #51889f;
+  padding: 5px;
+}
+body main section.info-circles div.circles div.circles-inner button.slide {
+  position: absolute;
+  transform: translate(0%, -50%);
+  top: 50%;
+  font-size: 1.5rem;
+}
+body main section.info-circles div.circles div.circles-inner button.to-left {
+  left: 0%;
+}
+body main section.info-circles div.circles div.circles-inner button.to-right {
+  right: 0%;
+}
+body main section.empty-container {
+  min-height: 50vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body main section.empty-container h1 {
+  font-size: 2rem;
+  font-weight: normal;
+  color: white;
+}
+body main section.google-map {
+  background-color: white;
+  padding: 2rem 1rem;
+}
+body main section.google-map h1 {
+  font-size: 2.2em;
+  text-align: center;
+}
+body main section.google-map p {
+  font-size: 1.25rem;
+  margin: 1rem;
+}
+body main section.google-map iframe {
+  width: 100%;
+  height: 40vh;
+}
+body main section.attr-card {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0.5rem 2rem;
+  justify-content: center;
+}
+body main section.attr-card span.anchor {
+  display: block;
+  position: relative;
+  top: -100px;
+  visibility: hidden;
+}
+body main section.attr-card div.attr-img {
+  width: 25rem;
+  height: 25rem;
+  padding: 0.5rem;
+  display: inline-block;
+  overflow: hidden;
+}
+body main section.attr-card div.attr-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+body main section.attr-card div.attr-info {
+  flex: 1 1 300px;
+  border: 3px dashed #dae7f2;
+  border-radius: 10px;
+  margin: 1rem;
+  padding: 2rem;
+}
+body main section.attr-card div.attr-info h1 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+body main section.attr-card div.attr-info h2 {
+  font-size: 1.2rem;
+  color: #58595b;
+  opacity: 0.7;
+}
+body main section.attr-card div.attr-info p {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  line-height: 24px;
+  text-align: justify;
+}
+body main section.food-card {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem 1rem;
+  justify-content: center;
+  margin: 0 auto;
+}
+body main section.food-card div.food-img {
+  width: 22rem;
+  height: 22rem;
+  padding: 1rem;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+}
+body main section.food-card div.food-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+body main section.food-card div.food-img div.overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  border-radius: 10px;
+  top: 1rem;
+  left: 1rem;
+  width: 20rem;
+  height: 20rem;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  transition: opacity 0.3s ease;
+}
+body main section.food-card div.food-img div.overlay p {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+body main section.food-card div.food-img div.overlay:hover {
+  opacity: 1;
+}
+body main section.about-card {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1rem 5rem;
+  padding: 1rem;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 3px dashed #dae7f2;
+}
+body main section.about-card div.about-img {
+  width: 25rem;
+  height: 25rem;
+  display: inline-block;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.1) 5px 5px 5px, #dae7f2 10px 10px 5px;
+}
+body main section.about-card div.about-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body main section.about-card div.about-info {
+  flex: 1 1 300px;
+  border-radius: 10px;
+  margin: 1rem;
+  padding: 2rem;
+}
+body main section.about-card div.about-info h1 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+body main section.about-card div.about-info h2 {
+  font-size: 1.2rem;
+  color: #58595b;
+  opacity: 0.7;
+}
+body main section.about-card div.about-info p {
+  margin-top: 10px;
+  font-size: 1.4rem;
+  line-height: 24px;
+  text-align: justify;
+}
+body main section.contact {
+  display: flex;
+  height: 500px;
+  justify-content: center;
+  align-items: center;
+}
+body main section.contact div.contact-card {
+  width: 600px;
+  height: 200px;
+  background-color: #dae7f2;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+}
+body main section.contact div.contact-card h3 {
+  font-size: 1.8rem;
+}
+body main section.contact div.contact-card p {
+  font-size: 1.2rem;
+}
+body footer {
+  display: flex;
+  padding: 2rem;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+body footer section.links {
+  margin-top: 2rem;
+}
+body footer section.links a img {
+  width: 5vh;
+  margin: 0rem 1rem;
+}
+
+@media screen and (max-width: 700px) {
+  body header section.logo {
+    max-width: 260px;
+  }
+  body header section.logo img {
+    width: 30vw;
+  }
+  body header section.switch-menu-div {
+    display: flex;
+  }
+  body header section.switch-menu-div div.empty-area {
+    flex: 1 5 50px;
+  }
+  body header section.switch-menu-div label.switch-menu {
+    display: block;
+  }
+  body header nav ul {
+    flex-direction: column;
+    max-height: 0;
+    overflow: hidden;
+  }
+  body header nav ul li {
+    padding: 0.5rem 0.25rem;
+    background-color: white;
+    text-align: center;
+  }
+  body header nav ul li a {
+    display: block;
+  }
+  body header nav ul li a:hover {
+    border-bottom: none;
+  }
+  body main {
+    /*attractions*/
+    /*about*/
+  }
+  body main section.background-img h1 {
+    font-size: 2.2rem;
+  }
+  body main section.info-circles {
+    padding: 3rem 2rem;
+  }
+  body main section.info-circles h1 {
+    font-size: 1.5rem;
+  }
+  body main section.empty-container h1 {
+    font-size: 1.5rem;
+  }
+  body main section.google-map h1 {
+    font-size: 1.5rem;
+  }
+  body main section.google-map p {
+    font-size: 1rem;
+  }
+  body main section.attr-card div.attr-img {
+    justify-content: center;
+  }
+  body main section.about-card {
+    padding: 1rem 0rem;
+    margin: 1rem 1rem;
+  }
+  body main section.about-card div.about-img {
+    width: 20rem;
+    max-height: 20rem;
+  }
+  body main section.about-card div.about-info {
+    flex: 1 1 300px;
+    border-radius: 10px;
+    margin: 1rem;
+    padding: 0rem;
+  }
+  body main section.contact div.contact-card {
+    width: 90%;
+  }
+  body main section.contact div.contact-card h3 {
+    font-size: 1.5rem;
+  }
+  body main section.contact div.contact-card p {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  body main {
+    /*attractions*/
+  }
+  body main section.background-img h1 {
+    font-size: 1.5rem;
+  }
+  body main section.empty-container h1 {
+    font-size: 1rem;
+  }
+  body main section.attr-card {
+    padding: 0.5rem;
+  }
+  body main section.attr-card div.attr-img {
+    width: 20rem;
+    max-height: 20rem;
+  }
+  body main section.attr-card div.attr-info {
+    padding: 1rem;
+    margin: 0;
+  }
+  body main section.contact div.contact-card h3 {
+    font-size: 1.2rem;
+  }
+  body main section.contact div.contact-card p {
+    font-size: 1rem;
+  }
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #51889f;
+  border-radius: 20px;
+}/*# sourceMappingURL=style.css.map */

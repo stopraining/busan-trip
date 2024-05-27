@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="zh-Hants" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <!--google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC&display=swap"
+      rel="stylesheet"
+    />
+    <title>熱門景點</title>
+  </head>
+  <body>
+    <header>
+      <section class="logo">
+        <a href="/index.html"
+          ><img src="./images/logo.svg" alt="日本旅遊網logo"
+        /></a>
+        <!-- <h1>Hello, Busan</h1> -->
+      </section>
+      <section class="switch-menu-div">
+        <div class="empty-area"></div>
+        <label class="switch-menu" for="switch-menu"
+          ><i class="fa-solid fa-bars"></i
+        ></label>
+      </section>
+      <nav>
+        <!-- <button class="burger"><i class="fa-solid fa-bars"></i></button> -->
+        <!-- <label class="switchMenu" for="switchMenu"
+            ><i class="fa-solid fa-bars"></i
+          ></label>
+          <input type="checkbox" id="switchMenu" /> -->
+        <input type="checkbox" id="switch-menu" />
+        <ul class="menu">
+          <li>
+            <a href="./attractions.html">
+              <i class="fa-solid fa-fire"></i> 熱門景點
+            </a>
+          </li>
+          <li>
+            <a href="/food.html">
+              <i class="fa-solid fa-utensils"></i> 美食推薦
+            </a>
+          </li>
+          <li>
+            <a href="/about.html">
+              <i class="fa-solid fa-book"></i> 關於釜山
+            </a>
+          </li>
+          <li>
+            <a href="/contact.html">
+              <i class="fa-regular fa-address-book"></i> 聯絡我們
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="attr-card">
+        <span class="anchor" id="SkyCapsule"></span>
+        <div class="attr-img">
+          <img src="./images/attractions/SkyCapsule.jpeg" alt="膠囊列車" />
+        </div>
+        <div class="attr-info">
+          <h1>膠囊列車</h1>
+          <h2>
+            推薦指數：<i class="fa-solid fa-star"></i
+            ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+            ><i class="fa-solid fa-star"></i
+            ><i class="fa-regular fa-star-half-stroke"></i>
+          </h2>
+          <p>
+            是一個行駛在空中的列車，從海雲台尾浦到青沙浦長約 2
+            公里的路段，讓您從 7~10
+            公尺的高空軌道上欣賞神秘的海岸風光，列車外型繽紛可愛，超級好拍～是網美打卡的超夯景點！建議提前預約喔～
+          </p>
+        </div>
+      </section>
+      <section class="attr-card">
+        <span class="anchor" id="AirCruise"></span>
+        <div class="attr-img">
+          <img src="./images/attractions/AirCruise.jpeg" alt="松島纜車" />
+        </div>
+        <div class="attr-info">
+          <h1>松島纜車</h1>
+          <h2>
+            推薦指數：<i class="fa-solid fa-star"></i
+            ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+            ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </h2>
+          <p>
+            全長約 1.62 公里，纜車設施跨越松島灣連接到了對岸的松島Sky
+            Park上，串連起松島海水浴場、松島天空步道、松島龍宮雲橋步道等知名的釜山景點，除了普通車廂外，也有底部透明的水晶車廂，從不同的海上視角遠眺釜山城市景緻和無敵海景，超超超推薦的！
+          </p>
+        </div>
+      </section>
+      <section class="attr-card">
+        <span class="anchor" id="BlueLinePark"></span>
+        <div class="attr-img">
+          <img src="./images/attractions/BlueLinePark.jpeg" alt="海岸列車" />
+        </div>
+        <div class="attr-info">
+          <h1>海岸列車</h1>
+          <h2>
+            推薦指數：<i class="fa-solid fa-star"></i
+            ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+            ><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+          </h2>
+          <p>
+            單軌復古造型列車，全座位面海運行，是往返於海雲台尾浦、青沙浦到松亭的觀光列車，可以一邊乘搭，一邊欣賞東釜山美麗的海岸風光。總長約4.8公里，車程單趟約30分鐘。建議可以提早去排隊，幸運的話可以坐到海景第一排喔～
+          </p>
+        </div>
+      </section>
+      <section class="attr-card">
+        <span class="anchor" id="HaeundaeBeach"></span>
+        <div class="attr-img">
+          <img
+            src="./images/attractions/HaeundaeBeach.jpeg"
+            alt="海雲台海水浴場"
+          />
+        </div>
+        <div class="attr-info">
+          <h1>海雲台海水浴場</h1>
+          <h2>
+            推薦指數：<i class="fa-solid fa-star"></i
+            ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+            ><i class="fa-solid fa-star"></i
+            ><i class="fa-regular fa-star-half-stroke"></i>
+          </h2>
+          <p>
+            海雲台經典必去景點，沙灘總長約兩公里，周圍有很多摩天大樓，是釜山標誌性的地區。遊客除了來戲水、散步，還能看到釜山的吉祥物海鷗喔～入夜的海雲台海灘也還是很熱鬧，有機會還能遇到街頭藝人在沙灘上浪慢獻唱。
+          </p>
+          <p></p>
+        </div>
+      </section>
+      <section class="attr-card">
+        <span class="anchor" id="Huinnyeoul"></span>
+        <div class="attr-img">
+          <img src="./images/attractions/Huinnyeoul.jpeg" alt="白淺灘文化村" />
+        </div>
+        <div class="attr-info">
+          <h1>白淺灘文化村</h1>
+          <h2>
+            推薦指數：<i class="fa-solid fa-star"></i
+            ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+            ><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+          </h2>
+          <p>
+            因為連接蓬萊山上潺潺小溪，一路沿著蜿蜒山勢向下流的溪水，遠看同白雪紛飛般，而命名為白淺灘文化村。以前這裡是破舊、沒落的難民村，但現在這裡處處可見色彩繽紛的小店，還有網美超愛拍照打卡的景點！
+          </p>
+        </div>
+      </section>
+      <section class="attr-card">
+        <span class="anchor" id="GwanganBridge"></span>
+        <div class="attr-img">
+          <img src="./images/attractions/GwanganBridge.jpeg" alt="廣安大橋" />
+        </div>
+        <div class="attr-info">
+          <h1>廣安大橋＆廣安海水浴場</h1>
+          <h2>
+            推薦指數：<i class="fa-solid fa-star"></i
+            ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+            ><i class="fa-solid fa-star"></i
+            ><i class="fa-regular fa-star-half-stroke"></i>
+          </h2>
+          <p>
+            總長7.4公里的廣安大橋是僅次於仁川大橋的韓國第二長橋，點燈的廣安大橋燈光會變很絢麗喔！被稱為釜山代表性海水浴場之一的廣安里海水浴場，沿著海邊有咖啡廳、酒吧與餐廳，很適合安排傍晚來這裡的咖啡廳看夕陽和夜景，夜晚的這裡也是特別熱鬧呢！
+          </p>
+        </div>
+      </section>
+      <section class="attr-card">
+        <span class="anchor" id="theSky"></span>
+        <div class="attr-img">
+          <img src="./images/attractions/theSky.jpeg" alt="Busan X the sky" />
+        </div>
+        <div class="attr-info">
+          <h1>Busan X the sky</h1>
+          <h2>
+            推薦指數：<i class="fa-solid fa-star"></i
+            ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+            ><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+          </h2>
+          <p>
+            位於100樓的觀景台，四周都是玻璃落地窗，可眺望釜山海景、廣安大橋和釜山港大橋等美景！有一段透明的步道，膽小懼高的朋友不要往下看呀！走在上面真的會有點腿軟呢！
+          </p>
+        </div>
+      </section>
+      <section class="attr-card">
+        <span class="anchor" id="HaedongYonggung"></span>
+        <div class="attr-img">
+          <img
+            src="./images/attractions/HaedongYonggung.jpeg"
+            alt="海東龍宮寺"
+          />
+        </div>
+        <div class="attr-info">
+          <h1>海東龍宮寺</h1>
+          <h2>
+            推薦指數：<i class="fa-solid fa-star"></i
+            ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+            ><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+          </h2>
+          <p>
+            海東龍宮寺原名普門寺，是韓國三大觀音聖地之一，也是全韓國唯一建築在海邊的寺廟。除了來拜拜和看無敵海景外，很多人還會為了一睹道路旁盛開的櫻花而到此一遊(最佳賞櫻時間為3月底~4月初)。
+          </p>
+        </div>
+      </section>
+      <section class="attr-card">
+        <span class="anchor" id="Gamcheon"></span>
+        <div class="attr-img">
+          <img src="./images/attractions/Gamcheon.jpeg" alt="甘川洞文化村" />
+        </div>
+        <div class="attr-info">
+          <h1>甘川洞文化村</h1>
+          <h2>
+            推薦指數：<i class="fa-solid fa-star"></i
+            ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+            ><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+          </h2>
+          <p>
+            曾經是難民窟，現在是釜山極具代表性的景點。除了五彩繽紛的房子外，還有可愛的小王子與狐狸，是遊客來必拍的打卡景點！另外，這裡也可以出借韓服來拍美美的照片喔～
+          </p>
+        </div>
+      </section>
+      <section class="attr-card">
+        <span class="anchor" id="BusanTower"></span>
+        <div class="attr-img">
+          <img src="./images/attractions/BusanTower.jpeg" alt="釜山塔" />
+        </div>
+        <div class="attr-info">
+          <h1>釜山塔</h1>
+          <h2>
+            推薦指數：<i class="fa-solid fa-star"></i
+            ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+            ><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+          </h2>
+          <p>
+            也稱鑽石塔，位於釜山龍頭山公園的觀景塔，高120公尺，能俯瞰釜山港與影島。在裡面參觀的同時，也有有趣的闖關遊戲可以挑戰喔，挑戰成功還會送小小的禮物。
+          </p>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
