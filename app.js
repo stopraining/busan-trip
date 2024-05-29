@@ -15,7 +15,7 @@ let topBackground = document.querySelector("section.background-img");
 let currentIndex = 0;
 
 function showImage(index) {
-  topBackground.style.backgroundImage = `url("../images/attractions/${imageList[index]}.jpeg")`;
+  topBackground.style.backgroundImage = `url("./images/attractions/${imageList[index]}.jpeg")`;
 }
 function nextImage() {
   currentIndex = (currentIndex + 1) % imageList.length; //取餘數
