@@ -76,8 +76,8 @@ body {
     }
     nav {
       flex: 5 1 500px;
-      padding-top: 3rem;
-      margin-top: -3rem;
+      // padding-top: 3rem;
+      //margin-top: -3rem;
       input#switch-menu {
         display: none;
         &:checked ~ .menu {
@@ -499,6 +499,7 @@ body {
           padding: 0rem;
         }
       }
+      /*contact*/
       section.contact {
         div.contact-card {
           width: 90%;
@@ -539,6 +540,7 @@ body {
           margin: 0;
         }
       }
+      /*contact*/
       section.contact {
         div.contact-card {
           h3 {

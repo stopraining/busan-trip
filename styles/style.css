@@ -69,8 +69,6 @@ body header section.switch-menu-div label.switch-menu {
 }
 body header nav {
   flex: 5 1 500px;
-  padding-top: 3rem;
-  margin-top: -3rem;
 }
 body header nav input#switch-menu {
   display: none;
@@ -417,6 +415,7 @@ body footer section.links a img {
   body main {
     /*attractions*/
     /*about*/
+    /*contact*/
   }
   body main section.background-img h1 {
     font-size: 2.2rem;
@@ -466,6 +465,7 @@ body footer section.links a img {
 @media screen and (max-width: 500px) {
   body main {
     /*attractions*/
+    /*contact*/
   }
   body main section.background-img h1 {
     font-size: 1.5rem;
